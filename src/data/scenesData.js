@@ -146,6 +146,16 @@ export const SCENES = [
     quote: 'Doraemon! Help me, Doraemon!',
     videoFilename: 'nobita.mp4',
     characterAvatar: '📘'
+  },
+  {
+    id: 'eren',
+    characterName: 'Eren Yeager',
+    anime: 'Attack on Titan',
+    voiceActor: 'Yuki Kaji',
+    difficulty: 'easy',
+    quote: 'Tatakai! (If you win, you live. If you lose, you die. If you don\'t fight, you can\'t win!)',
+    videoFilename: 'eren.mp4',
+    characterAvatar: '🕊️'
   }
 ];
 

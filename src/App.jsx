@@ -18,7 +18,7 @@ export default function App() {
   const [quizQueue, setQuizQueue] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedDifficulty, setSelectedDifficulty] = useState('all');
-  const [questionCount, setQuestionCount] = useState(14);
+  const [questionCount, setQuestionCount] = useState(15);
 
   // Current question sub-phase: 'GUESSING' (audio only) | 'REVEALED' (video scene revealed)
   const [phase, setPhase] = useState('GUESSING');
@@ -241,14 +241,14 @@ export default function App() {
               <div className="control-group">
                 <label className="control-label">Number of Scenes</label>
                 <div className="count-pills">
-                  {[5, 7, 10, 14].map((num) => (
+                  {[5, 10, 15].map((num) => (
                     <button
                       key={num}
                       type="button"
                       className={`pill-btn ${questionCount === num ? 'active' : ''}`}
                       onClick={() => setQuestionCount(num)}
                     >
-                      {num} {num === 14 ? '(ALL)' : 'SCENES'}
+                      {num} {num === 15 ? '(ALL)' : 'SCENES'}
                     </button>
                   ))}
                 </div>
